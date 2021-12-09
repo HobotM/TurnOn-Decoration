@@ -47,7 +47,7 @@ function deckTheHalls() {
     }  
  
 
-
+    //Functionality for left span element change from an array
  function LeftChange() {
     house.innerHTML ='🏡';
     index++;
@@ -57,7 +57,7 @@ function deckTheHalls() {
     house.innerHTML = first.innerHTML + house.innerHTML + second.innerHTML;
     
 }
-
+//Functionality for right span element change from an array
 function RightChange() {
     house.innerHTML = '🏡';
     index++;
