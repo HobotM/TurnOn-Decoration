@@ -15,8 +15,7 @@ var second = document.getElementById("second");
 buttons.hidden = true;
 first.hidden = true;
 second.hidden = true;
-left.hidden = true;
-right.hidden = true;
+
 
 
 const emoji = ['👶', '👼' ,'🎅','🤶','🧑','🧝','🧝‍♂️','🧝‍♀️','👪','🦌','🍪','🥛','🍷','⛪','🌟','❄️','☃️','⛄','🔥','🎄','🎁','🧦','🔔','🎶','🕯️'];
@@ -25,8 +24,7 @@ first.innerHTML = emoji[14];
 var index = 0;
 
 function deckTheHalls() {
-    left.hidden = false;
-    right.hidden = false;
+  buttons.hidden = false;
   if (decorator.checked == true)
   {
      
@@ -37,8 +35,7 @@ function deckTheHalls() {
     buttons.hidden = true;
     first.hidden = true;
     second.hidden = true;
-    left.hidden = true;
-    right.hidden = true;
+    
     house.innerHTML = "🏡";
   }
     }  
