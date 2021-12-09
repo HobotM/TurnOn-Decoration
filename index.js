@@ -1,8 +1,10 @@
 const house = document.getElementById("house")
 const decorator = document.getElementById("decorator")
 decorator.addEventListener("click", deckTheHalls)
-var left = document.getElementById("left");
-var right = document.getElementById("right");
+const left = document.getElementById("left");
+const right = document.getElementById("right");
+const buttons = document.getElementById("buttons");
+
 left.addEventListener("click", LeftChange);
 right.addEventListener("click", RightChange);
 
@@ -10,7 +12,7 @@ var first = document.getElementById("first");
 var second = document.getElementById("second");
 
 
-
+buttons.hidden = true;
 first.hidden = true;
 second.hidden = true;
 left.hidden = true;
@@ -32,6 +34,11 @@ function deckTheHalls() {
      
   }
   else{
+    buttons.hidden = true;
+    first.hidden = true;
+    second.hidden = true;
+    left.hidden = true;
+    right.hidden = true;
     house.innerHTML = "🏡";
   }
     }  
