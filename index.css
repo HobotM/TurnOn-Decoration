@@ -1,0 +1,106 @@
+:root {
+    --wine-red: #C7375F;
+    --bright-red: #D42D2F;
+    --dark-green: #344D2F;
+    --light-green: #77A047;
+    --gold: #FAC57D;
+    --snow: #F0F4F7;
+  }
+  
+  html, body {
+      margin: 0;
+      padding: 0;
+  }
+  
+  body,
+  .container {
+      display: flex;
+      justify-content: center;
+      align-items: center
+  }
+  
+  body {
+      background-color: var(--dark-green);
+      height: 100vh;
+  }
+  
+  .container {
+      background: var(--snow);
+      flex-direction: column;
+      border-radius: 10px;
+      padding: 3em;
+      min-width: 250px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  }
+  
+  p {
+      font-size: 45px;
+  }
+  
+  
+  input[type=checkbox] {
+      height: 0;
+      width: 0;
+      visibility: hidden;
+  }
+  
+  .decorator + label {
+      width: 50px;
+      height: 30px;
+      border-radius: 15px;
+      position: relative;
+      cursor: pointer;
+      margin: 0.8em;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+      background-color: darkgray;
+  }
+  
+  .decorator + label::after  {
+      content: '';
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      top: 3px;
+      left: 4px;
+      transition: .5s;
+      
+      background-color: lightgray;
+  }
+  
+  .decorator:checked + label {
+      background-color: var(--bright-red);
+      -webkit-transition: background-color 0.5s linear;
+      -ms-transition: background-color 0.5s linear;
+      transition: background-color 0.5s linear;
+  }
+  
+  
+  .decorator:checked + label::after{
+      transform: translate(18px);
+      background-color: var(--snow); 
+  }
+  
+.buttons{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    
+}
+  button {
+    
+    margin: auto 3em;
+    width: 4em;
+    text-align: center;
+    background-color: rgb(231, 64, 42);
+    padding: 0.5em;
+    flex-direction: row;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.2s;
+    box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.6);
+    border-radius: 8px;
+   
+  }
+  
